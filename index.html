@@ -2,10 +2,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Literata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>To Do App</title>
 </head>
-
 <body>
 
 <div id="main-heading">
@@ -15,43 +15,24 @@
 </div>
 
 <div id="user-input-area">
- 
-    <div id="user_input-div">
-        <input type="text" id="taskName" name="taskName" placeholder="Enter Task Name">
-        <input type="text" id="priorityLevel" name="taskName" placeholder="Enter Priority Level">
+    <div id="user-input-div">
+        <input type="text" id="taskName firstinput" name="taskName" placeholder="Enter Task Name">
+        <input type="text" id="priorityLevel secondinput" name="taskName" placeholder="Enter Priority Level">
         <button id="saveButton" name="saveButton">Add</button>
     </div>
-
 </div>
 
 <div id="pending-tasks-area">
-
-    <div class="section-headings">
-        <h2 id="pending-task-heading">Pending Tasks</h2>
-    </div>
-    <div id="pending-tasks-tasks">
-
-    </div>
-
+    <div class="section-headings"><h2 id="pending-task-heading">Pending Tasks</h2></div>
+    <div id="pending-tasks-tasks"></div>
 </div>
-
-
 
 <div id="completed-tasks-area">
-
-        <div class="section-headings">
-            <h2 id="completed-task-heading">Completed Tasks</h2>
-        </div>
-        <div id="completed-tasks-tasks">
-        
-        </div>
-
+    <div class="section-headings"><h2 id="completed-task-heading">Completed Tasks</h2></div>
+    <div id="completed-tasks-tasks"></div>
 </div>
 
-
 </body>
-
 <script src="jQuery.js"></script>
 <script src="script.js"></script>
-
 </html>
