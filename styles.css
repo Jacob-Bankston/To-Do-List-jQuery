@@ -11,27 +11,77 @@ body {
     font-size: 2em;
     font-family: 'Literata', serif;
     text-shadow: 2px 2px 10px gray;
+    text-align: center;
 }
 
 #user-input-area {
-    padding: 10px 0 10px 10px;
+    padding: 10px;
 }
 
 #user-input-div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
 }
 
 #user-input-div input {
-    font-size: .7em;
+    font-size: 1.4em;
     font-family: 'Darker Grotesque', serif;
     border: 1px solid gray;
     border-radius: 5px;
     display: flex;
+    border-color: #46D3FE;
+    border-radius: 4px;
+    flex: 1;
+    text-align: center;
+    text-shadow: 1px 1px 2px gray;
+    align-items: center;
 }
 
 #user-input-div button {
     display: flex;
     justify-self: end;
+    border-color: #46D3FE;
+    border-radius: 4px;
+    flex: 1;
+    font-size: 1.4em;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    text-shadow: 2px 2px 4px gray;
+}
+
+#pending-tasks-area, #completed-tasks-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    flex-direction: column;
+}
+
+.section-headings {
+    font-size: 1.4em;
+    text-align: center;
+    text-shadow: 2px 2px 4px gray;
+    border: solid black 2px;
+    background-color: #46D3FE;
+    border-radius: 8px;
+    padding: 0 20px 0 20px;
+}
+
+#pending-tasks-tasks, #completed-tasks-tasks {
+    font-size: 1em;
+    color: black;
+    border: 1px solid #46D3Fe;
+    background-color: rgba(0,0,0,.1);
+    text-shadow: 1px 1px 4px gray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5px 0 5px 0;
+}
+
+#pending-tasks-tasks button, #completed-tasks-tasks button {
+    align-self: flex-end;
 }
