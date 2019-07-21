@@ -35,6 +35,7 @@ body {
     text-align: center;
     text-shadow: 1px 1px 2px gray;
     align-items: center;
+    margin: 2%;
 }
 
 #user-input-div button {
@@ -48,6 +49,7 @@ body {
     justify-content: center;
     background-color: white;
     text-shadow: 2px 2px 4px gray;
+    margin: 2%;
 }
 
 #pending-tasks-area, #completed-tasks-area {
@@ -68,6 +70,10 @@ body {
     padding: 0 20px 0 20px;
 }
 
+.section-headings h2 {
+    margin: 0;
+}
+
 #pending-tasks-tasks, #completed-tasks-tasks {
     font-size: 1em;
     color: black;
@@ -84,4 +90,16 @@ body {
 
 #pending-tasks-tasks button, #completed-tasks-tasks button {
     align-self: flex-end;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.task-item * {
+    display: flex;
+    flex: 1;
 }
