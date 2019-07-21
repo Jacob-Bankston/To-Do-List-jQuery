@@ -10,7 +10,7 @@ $(document).ready(() => {
         let taskItemDiv = $('<div class="task-item">')
 
         // Saving the title and priority values
-        let taskTitle = '<span class="task-text">' + taskName.val() + '</span>'
+        let taskTitle = '<span class="task-text">' + taskName.val() + '   </span>'
         taskName.val('')
         console.log(taskName.val())
         let priorityTitle = '<span class="task-text">' + priorityLevel.val() + '</span>'

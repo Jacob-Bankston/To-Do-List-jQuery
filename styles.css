@@ -99,8 +99,53 @@ body {
     text-align: center;
     margin: 5px 0 5px 0;
     font-size: 1.2em;
+    border-radius: 8px;
 }
 
 .task-item * {
     display: flex;
+}
+
+@media screen and (max-width: 550px) {
+
+    #main-heading {
+        font-size: 2em;
+    }
+
+    #user-input-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #user-input-div input {
+        font-size: 1.5em;
+        margin: .5%;
+    }
+    
+    #user-input-div button {
+        font-size: 1.5em;
+        width: 20%;
+        margin: .5%;
+    }
+    
+    .section-headings {
+        font-size: 1.7em;
+        width: 100%
+    }
+    
+    #pending-tasks-area, #pending-tasks-tasks {
+        padding: 3px 0 3px 0;
+    }
+
+    .task-item {
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 1.2em;
+    }
+
+    #pending-tasks-tasks button, #completed-tasks-tasks button {
+        align-self: center;
+        font-size: .5em;
+    }
+
 }
