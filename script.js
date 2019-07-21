@@ -11,7 +11,6 @@ $(document).ready(() => {
 
         // Saving the title and priority values
         let taskTitle = '<span class="task-text">' + taskName.val() + '</span>'
-        taskTitle.attr('type', 'text')
         taskName.val('')
         console.log(taskName.val())
         let priorityTitle = '<span class="task-text">' + priorityLevel.val() + '</span>'

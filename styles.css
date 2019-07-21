@@ -77,15 +77,12 @@ body {
 #pending-tasks-tasks, #completed-tasks-tasks {
     font-size: 1em;
     color: black;
-    border: 1px solid #46D3Fe;
-    background-color: rgba(0,0,0,.1);
     text-shadow: 1px 1px 4px gray;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 5px 0 5px 0;
+    min-width: 75%;
+    font-size: 1.2em;
 }
 
 #pending-tasks-tasks button, #completed-tasks-tasks button {
@@ -97,9 +94,13 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    border: 1px solid #46D3Fe;
+    background-color: rgba(0,0,0,.1);
+    text-align: center;
+    margin: 5px 0 5px 0;
+    font-size: 1.2em;
 }
 
 .task-item * {
     display: flex;
-    flex: 1;
 }
